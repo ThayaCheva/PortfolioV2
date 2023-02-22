@@ -1,31 +1,73 @@
 import React from 'react'
 import Card from './Card.js'
+import './css/Projects.css'
+
 export default function Projects() {
+    const [direction, setDirection] = React.useState("left") 
+    const [aStyle, setAStyle] = React.useState({color: "#333"})
+    const arrowLeft = {
+      color: direction === "left" ? "#333" : ""
+    }
+    const arrowRight = {
+      color: direction === "right" ? "#333" : ""
+    }
+    function handleLeft() {
+      document.getElementById("card-id").style.transform = "translateX(0px)"
+      document.getElementById("card-id").style.transition = "all 0.7s ease-in-out"
+      if (direction === "right") {
+        setDirection("left")
+      }
+      console.log(direction)
+    }
+    
+    function handleRight() {
+      document.getElementById("card-id").style.transform = "translateX(-320px)"
+      document.getElementById("card-id").style.transition = "all 0.7s ease-in-out"
+      if (direction === "left") {
+        setDirection("right")
+      }
+      console.log(direction)
+    }
+
     return (
-        <section className="projects">
+      <section id="projects" className="reveal">
         <div className="projects-container">
           <div className="section-header">
             <div className="bullet"></div>
             <h1>My <span className="highlight">Projects </span></h1>
           </div>
-          <Card 
-            title={"Project 1"} 
-            time={"2022-CURR"} 
-            info={"I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."}
-            img={require("../img/port1.jpg")}
-            />
-          <Card 
-            title={"Project 2"} 
-            time={"2022-CURR"} 
-            info={"I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."}
-            img={require("../img/port2.jpg")}
-            />
-          <Card 
-            title={"Project 3"} 
-            time={"2022-CURR"} 
-            info={"I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."}
-            img={require("../img/port3.jpg")}
-            />
+          <div className="slide-container">
+            <div className="arrow" style={arrowLeft} onClick={() => handleLeft()}>{`<`}</div>
+            <div className="cards">
+              <div id="card-id" className="card-container">
+                <Card 
+                  title={"Tenzi"} 
+                  time={"2022-2023"} 
+                  img={require("../img/Tenzi.JPG")}
+                  link={"https://github.com/ThayaCheva/React-Practice/tree/main/tenzies"}
+                  />
+                <Card 
+                  title={"Shadow Pirate"} 
+                  time={"2022-2022"} 
+                  img={require("../img/shadow.JPG")}
+                  link={"https://github.com/ThayaCheva/ShadowPirate"}
+                  />
+                <Card 
+                  title={"Front-End Development"} 
+                  time={"2018-2019"} 
+                  img={require("../img/proj3.PNG")}
+                  link={"https://github.com/ThayaCheva/Web-Development/tree/master/Made%20In%20Abyss%20Website_2"}
+                  />
+                <Card 
+                  title={"Hackthon Project"} 
+                  time={"2022-2022"} 
+                  img={require("../img/port2.jpg")}
+                  link={"https://github.com/ThayaCheva/Star-Wars-Final"}
+                  />
+              </div>
+            </div>
+            <div className="arrow" style={arrowRight} onClick={() => handleRight()}>{`>`}</div>
+          </div>
         </div>
       </section>
     )

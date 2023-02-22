@@ -1,12 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faHouse, faPhone } from '@fortawesome/free-solid-svg-icons'
-
+import './css/Footer.css'
 
 export default function Footer() {
     return (
-        <footer>
+        <footer id="footer">
             <div className="footer-container">
                 <div className="contact">
                     <div className="contact-container">
@@ -17,10 +17,9 @@ export default function Footer() {
                 </div>
                 <div className="media">
                     <div className="icons">
-                        <div className="icon"><FontAwesomeIcon icon={faFacebook} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={faDiscord} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={faGithub} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={faLinkedin} /></div>
+                        <a href="https://www.facebook.com/thaya.1564156451/" target="_blank" className="icon"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://github.com/ThayaCheva" target="_blank" className="icon"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/thaya-chevaphatrakul-812149267/" target="_blank" className="icon"><FontAwesomeIcon icon={faLinkedin} /></a>
                     </div>
                     <h3>Thaya Chevaphatrakul © 2023</h3>
                 </div>

@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './css/Navbar.css'
 export default function Navbar() {
     return (
-        <nav className="navbar">
+        <nav id="navbar">
             <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>WORK</li>
-            <li>CONTACT</li>
+                <a href="#home" className="home-nav">HOME</a>
+                <a href="#about" className="nav-item">ABOUT</a>
+                <a href="#projects" className="nav-item">WORK</a>
+                <a href="#footer" className="nav-item">CONTACT</a>
             </ul>
         </nav>
     )
