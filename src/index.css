@@ -32,6 +32,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--background);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -124,13 +125,19 @@ p {
   margin-right: 1rem;
 }
 
-.card.reveal {
+.card.reveal{
   position: relative;
   transform: translateX(-150px);
   opacity: 0;
 }
 
-.card.active {
+.skills-container.reveal {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+}
+
+.card.active, .skills-container.active {
   position: relative;
   transform: translateX(0);
   opacity: 1;

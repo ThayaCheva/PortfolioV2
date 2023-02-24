@@ -11,13 +11,13 @@ export default function Education(props) {
             <div className="line"></div>
             </div>
             <div className="education-container">
-            <div className="education-heading">
-                <h2 className="school">{props.name}</h2>
-                <h3 className="time">{props.date}</h3>
-            </div>
-            <p>
-                {props.info}
-            </p>
+                <div className="education-heading">
+                    <h2 className="school">{props.name}</h2>
+                    <h3 className="time">{props.date}</h3>
+                </div>
+                <p>
+                    {props.info}
+                </p>
             </div>
         </div>
     )

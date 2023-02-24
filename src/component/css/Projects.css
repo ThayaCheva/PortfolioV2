@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 120%;
+    height: 100%;
   }
   
   .slide-container {
@@ -44,6 +44,7 @@
     margin: 0 1rem;
     border-radius: 15px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--tertiary);
   }
   
   .card:hover {

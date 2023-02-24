@@ -40,10 +40,10 @@ export default function Main() {
     }, [time])
 
     return (
-        <section className="main">
+        <section id="main">
             <div className="main-container">
             <div className="frame">
-                <img src={require("../img/port1.jpg")}></img>
+                <img alt="profile" src={require("../img/port1.jpg")}></img>
             </div>
                 <div className="intro">
                     <h1 className='name'>Hi, <span className="highlight">I'm Thaya Chevaphatrakul</span></h1>

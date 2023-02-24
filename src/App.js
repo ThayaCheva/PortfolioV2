@@ -3,8 +3,10 @@ import React from 'react'
 import Navbar from './component/Navbar.js'
 import Main from './component/Main.js'
 import About from './component/About.js'
+import Skills from './component/Skills.js'
 import Projects from './component/Projects.js'
 import Footer from './component/Footer.js'
+import './component/media/_media.css'
 
 function App() {
   window.addEventListener('scroll', reveal);
@@ -33,6 +35,10 @@ function App() {
         <div className="line"></div>
       </div>
       <About/>
+      <div className="linebreak">
+        <div className="line"></div>
+      </div>
+      <Skills/>
       <div className="linebreak">
         <div className="line"></div>
       </div>

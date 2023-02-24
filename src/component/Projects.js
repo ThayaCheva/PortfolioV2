@@ -4,7 +4,6 @@ import './css/Projects.css'
 
 export default function Projects() {
     const [direction, setDirection] = React.useState("left") 
-    const [aStyle, setAStyle] = React.useState({color: "#333"})
     const arrowLeft = {
       color: direction === "left" ? "#333" : ""
     }
@@ -17,7 +16,6 @@ export default function Projects() {
       if (direction === "right") {
         setDirection("left")
       }
-      console.log(direction)
     }
     
     function handleRight() {
@@ -26,7 +24,6 @@ export default function Projects() {
       if (direction === "left") {
         setDirection("right")
       }
-      console.log(direction)
     }
 
     return (
