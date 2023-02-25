@@ -20,7 +20,7 @@
     margin-bottom: 3rem;
 }
 
-.grid-item {
+.skill-icon {
     background: var(--tertiary);
     width: 120px;
     height: 120px;
@@ -34,12 +34,12 @@
     cursor: default;
 }
 
-.grid-item:hover {
+.grid-item:hover .skill-icon {
     transform: rotateX(180deg);
     border: 1px solid var(--primary);
 }
 
-.grid-item img {
+.skill-icon img {
     position: absolute;
     backface-visibility: hidden;
     max-width: 100px;
@@ -56,6 +56,6 @@
     transform: rotateX(180deg);
 }
 
-.back  h3 {
+.back h3 {
     color: var(--primary);
 }
