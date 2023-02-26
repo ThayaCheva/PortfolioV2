@@ -29,9 +29,9 @@
 
 /* Ipad Airs */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1100px) {
     .cards-container {
-        width: 650px;
+        width: 800px;
     }
 
     .card {
@@ -46,12 +46,23 @@
         align-items: center;
         justify-content: center;
     }
+
+    .card img {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .card img {
+        width: 340px;
+        height: 340px;
+    }
+
 }
 
 /* Iphones */
