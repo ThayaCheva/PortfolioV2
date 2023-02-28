@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.412ab3f1.css",
-    "main.js": "/static/js/main.923f43cb.js",
+    "main.css": "/static/css/main.98ff62d2.css",
+    "main.js": "/static/js/main.9451d3ac.js",
     "static/media/proj3.PNG": "/static/media/proj3.f854e27b66efe4c44a09.PNG",
     "static/media/react-logo.png": "/static/media/react-logo.81ed438b18e24116794d.png",
     "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
-    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.08c83cc2396143192701.pdf",
+    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.2f1e93874c518b0c975e.pdf",
     "static/media/python-logo.png": "/static/media/python-logo.dc906e9aa21b2a930657.png",
     "static/media/port2.jpg": "/static/media/port2.10c0c7033e2042271396.jpg",
     "static/media/port1.jpg": "/static/media/port1.1a095b25152a6ea3544c.jpg",
@@ -19,11 +19,11 @@
     "static/media/javascript-logo.png": "/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "static/media/java-logo.png": "/static/media/java-logo.6c64373d3b7415758078.png",
     "index.html": "/index.html",
-    "main.412ab3f1.css.map": "/static/css/main.412ab3f1.css.map",
-    "main.923f43cb.js.map": "/static/js/main.923f43cb.js.map"
+    "main.98ff62d2.css.map": "/static/css/main.98ff62d2.css.map",
+    "main.9451d3ac.js.map": "/static/js/main.9451d3ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.412ab3f1.css",
-    "static/js/main.923f43cb.js"
+    "static/css/main.98ff62d2.css",
+    "static/js/main.9451d3ac.js"
   ]
 }
