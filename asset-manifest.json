@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5641758a.css",
-    "main.js": "/portfolio/static/js/main.95070c2e.js",
-    "static/media/proj3.PNG": "/portfolio/static/media/proj3.f854e27b66efe4c44a09.PNG",
-    "static/media/react-logo.png": "/portfolio/static/media/react-logo.81ed438b18e24116794d.png",
-    "static/media/Roboto-Thin.ttf": "/portfolio/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
-    "static/media/Roboto-Regular.ttf": "/portfolio/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
-    "static/media/Thaya_IT_CV.pdf": "/portfolio/static/media/Thaya_IT_CV.2f1e93874c518b0c975e.pdf",
-    "static/media/python-logo.png": "/portfolio/static/media/python-logo.dc906e9aa21b2a930657.png",
-    "static/media/port2.jpg": "/portfolio/static/media/port2.10c0c7033e2042271396.jpg",
-    "static/media/port1.jpg": "/portfolio/static/media/port1.1a095b25152a6ea3544c.jpg",
-    "static/media/mysql-logo.png": "/portfolio/static/media/mysql-logo.2f2132d4838335ce808e.png",
-    "static/media/Tenzi.JPG": "/portfolio/static/media/Tenzi.de439e1c4ffc02389073.JPG",
-    "static/media/shadow.JPG": "/portfolio/static/media/shadow.a0919d3a3cd1f5d076ee.JPG",
-    "static/media/c-logo.png": "/portfolio/static/media/c-logo.bbbbbabc8c191bfb99bf.png",
-    "static/media/css-logo.png": "/portfolio/static/media/css-logo.bc75ccc78e3bf74f8aed.png",
-    "static/media/html-logo.png": "/portfolio/static/media/html-logo.b757b1105a63ab582275.png",
-    "static/media/javascript-logo.png": "/portfolio/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
-    "static/media/java-logo.png": "/portfolio/static/media/java-logo.6c64373d3b7415758078.png",
-    "index.html": "/portfolio/index.html",
-    "main.5641758a.css.map": "/portfolio/static/css/main.5641758a.css.map",
-    "main.95070c2e.js.map": "/portfolio/static/js/main.95070c2e.js.map"
+    "main.css": "/static/css/main.98ff62d2.css",
+    "main.js": "/static/js/main.9451d3ac.js",
+    "static/media/proj3.PNG": "/static/media/proj3.f854e27b66efe4c44a09.PNG",
+    "static/media/react-logo.png": "/static/media/react-logo.81ed438b18e24116794d.png",
+    "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.2f1e93874c518b0c975e.pdf",
+    "static/media/python-logo.png": "/static/media/python-logo.dc906e9aa21b2a930657.png",
+    "static/media/port2.jpg": "/static/media/port2.10c0c7033e2042271396.jpg",
+    "static/media/port1.jpg": "/static/media/port1.1a095b25152a6ea3544c.jpg",
+    "static/media/mysql-logo.png": "/static/media/mysql-logo.2f2132d4838335ce808e.png",
+    "static/media/Tenzi.JPG": "/static/media/Tenzi.de439e1c4ffc02389073.JPG",
+    "static/media/shadow.JPG": "/static/media/shadow.a0919d3a3cd1f5d076ee.JPG",
+    "static/media/c-logo.png": "/static/media/c-logo.bbbbbabc8c191bfb99bf.png",
+    "static/media/css-logo.png": "/static/media/css-logo.bc75ccc78e3bf74f8aed.png",
+    "static/media/html-logo.png": "/static/media/html-logo.b757b1105a63ab582275.png",
+    "static/media/javascript-logo.png": "/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
+    "static/media/java-logo.png": "/static/media/java-logo.6c64373d3b7415758078.png",
+    "index.html": "/index.html",
+    "main.98ff62d2.css.map": "/static/css/main.98ff62d2.css.map",
+    "main.9451d3ac.js.map": "/static/js/main.9451d3ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.5641758a.css",
-    "static/js/main.95070c2e.js"
+    "static/css/main.98ff62d2.css",
+    "static/js/main.9451d3ac.js"
   ]
 }
