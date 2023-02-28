@@ -10,7 +10,7 @@ export default function Projects() {
       time:"2018-2019",
       img:require("../img/proj3.PNG"),
       link:"https://github.com/ThayaCheva/Web-Development/tree/master/Made%20In%20Abyss%20Website_2",
-      desc:"This is a Front-End Development project made for my EPQ project as part of my A-levels. The website is based on the show Made In Abyss and functions as some-what of a guide."
+      desc:"This is a Front-End Development project made for my EPQ project as part of my A-levels. The website is based on the show Made In Abyss and functions as some-what of a guide. This project demonstrates my ability to use HTML, CSS and the ability to make a webpage responsive."
     },
     {
       id: "1",
@@ -26,7 +26,7 @@ export default function Projects() {
       time:"2022",
       img:require("../img/shadow.JPG"),
       link:"https://github.com/ThayaCheva/ShadowPirate",
-      desc:"Shadow Pirate is top-down game made using Java and the Bagel library. This game is made as a project for Object Oriented Software Development (SWEN20003). The game consists of 2 stages and the goal is to reach the treasure chest at the end of stage 2. The game has 2 types of enemies that can shoot projectiles at the enemy and the player can melee attack."
+      desc:"Shadow Pirate is top-down game made using Java and the Bagel library. This game is made as a project for Object Oriented Software Development (SWEN20003). The game consists of 2 stages and the goal is to reach the treasure chest at the end of stage 2. This project demonstrates my ability to perform Object Oriented Programming."
     },
     {
       id: "4",
@@ -34,7 +34,7 @@ export default function Projects() {
       time:"2022", 
       img:require("../img/port2.jpg"),
       link:"https://github.com/ThayaCheva/Star-Wars-Final",
-      desc:"A game made using Java and the Bagel library as part of the Catalyst 2022 Hackathon. The game is made in 24 hours."
+      desc:"A game made using Java and the Bagel library as part of the Catalyst 2022 Hackathon"
     }
   ]
 
