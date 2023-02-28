@@ -5,36 +5,32 @@ import './css/Projects.css'
 export default function Projects() {
   const cards = [
     {
-      id: "3",
       title:"Front-End Development",
       time:"2018-2019",
       img:require("../img/proj3.PNG"),
       link:"https://github.com/ThayaCheva/Web-Development/tree/master/Made%20In%20Abyss%20Website_2",
-      desc:"This is a Front-End Development project made for my EPQ project as part of my A-levels. The website is based on the show Made In Abyss and functions as some-what of a guide. This project demonstrates my ability to use HTML, CSS and the ability to make a webpage responsive."
+      desc:`This is a Front-End Development project made as my A level's EPQ. The website is based on the show "Made In Abyss" and functions as some-what of a guide. This project is created using HTML and CSS.Furthermore, the page is also responsive to mobile devices.`
     },
     {
-      id: "1",
-      title:"Tenzi Game",
-      time:"2022-2023",
-      img:require("../img/Tenzi.JPG"),
-      link:"https://github.com/ThayaCheva/React-Practice/tree/main/tenzies",
-      desc:"Tenzi is game where the goal is roll 10 dices until all the dices face are the same. The game is made using React and as part of my React practice project."
-    },
-    {
-      id: "2",
       title:"Shadow Pirate",
       time:"2022",
       img:require("../img/shadow.JPG"),
       link:"https://github.com/ThayaCheva/ShadowPirate",
-      desc:"Shadow Pirate is top-down game made using Java and the Bagel library. This game is made as a project for Object Oriented Software Development (SWEN20003). The game consists of 2 stages and the goal is to reach the treasure chest at the end of stage 2. This project demonstrates my ability to perform Object Oriented Programming."
+      desc:"Shadow Pirate is top-down game made using Java and the Bagel library. This game is made as a project for Object Oriented Software Development (SWEN20003). This project demonstrates my ability to understand Object Oriented Programming."
     },
     {
-      id: "4",
+      title:"Tenzi Game",
+      time:"2022-2023",
+      img:require("../img/Tenzi.JPG"),
+      link:"https://github.com/ThayaCheva/React-Practice/tree/main/tenzies",
+      desc:"Tenzi is game where the goal is roll 10 dices until all the dices face are the same. The game is made using HTML, CSS, JavaSript and React. The projects also utilizes hooks such as useState and useEffect."
+    },
+    {
       title:"Hackthon Project", 
       time:"2022", 
       img:require("../img/port2.jpg"),
       link:"https://github.com/ThayaCheva/Star-Wars-Final",
-      desc:"A game made using Java and the Bagel library as part of the Catalyst 2022 Hackathon"
+      desc:"A game similar to Galaga made using Java and the Bagel library as part of the Catalyst 2022 Hackathon."
     }
   ]
 
