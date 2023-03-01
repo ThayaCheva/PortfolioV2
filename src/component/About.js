@@ -20,8 +20,7 @@ export default function About() {
                   <h1>About <span className="highlight">Me</span></h1>
                 </div>
                 <p className={`click-me ${toggle ? "hide" : ""}`}>{`<>Click Me</>`}</p>
-                <p className={`${toggle ? "" : "hide"}`}>A diligent computing and software system
-                  undergraduate, experienced with using computer hardware and software. With my commitment and high aptitude to learn, I’m currently seeking a place within the field of computing in order to gain experience and improve my skill.
+                <p className={`${toggle ? "" : "hide"}`}>I'm an international student from Thailand and have studied in Thailand and Vietnam prior to coming to Australia. I'm very interested in computers and software. My current main focus is in the area of Web Design and Development.
                 </p>
             </div>
           </div>

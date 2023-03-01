@@ -31,6 +31,10 @@
     cursor: pointer;
   }
   
+  .about-me:hover {
+    border: 1px solid var(--primary);
+  }
+  
   .about-me .section-header {
     transform: translateY(100px);
     transition: all 0.4s ease-in-out;
