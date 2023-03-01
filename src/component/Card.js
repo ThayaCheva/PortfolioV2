@@ -21,7 +21,7 @@ export default function Card(props) {
                   {
                   props.video != "" ? 
                   <a href={props.video} target="_blank" className="btn code-btn"><FontAwesomeIcon icon={faYoutube} className="code-icon"/><h4>Video</h4></a> : 
-                  <a className="empty-btn">Video</a>
+                  <a className="empty-btn"><FontAwesomeIcon icon={faYoutube} className="code-icon"/><h4>Video</h4></a>
                   }
                   <a href={props.link} target="_blank" className="btn code-btn"><FontAwesomeIcon icon={faGithub} className="code-icon"/><h4>Code</h4></a>
                 </div>

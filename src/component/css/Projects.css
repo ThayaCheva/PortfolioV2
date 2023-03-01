@@ -60,12 +60,12 @@
   overflow: hidden;
 }
 
-.code-btn h4 {
+.code-btn h4, .empty-btn h4 {
   margin-left: 0.5rem;
 }
 
 .code-icon {
- font-size: 20px;
+  font-size: 20px;
 }
 
 .card-title {
