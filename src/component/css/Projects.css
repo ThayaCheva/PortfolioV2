@@ -43,7 +43,7 @@
   margin: 0 0 1rem 0;
 }
 
-.code-btn {
+.code-btn, .video-btn {
   position: relative;
   border: 1px solid var(--primary);
   background: none;
@@ -71,7 +71,29 @@
 .card-title {
   display: flex;
 }
-/* 
-.card-info {
-  background: red;
-} */
+
+.btn-container {
+  display: flex;
+}
+
+.code-btn {
+  margin-right: 2rem;
+}
+
+.empty-btn {
+  margin-right: 2rem;
+  position: relative;
+  border: 1px solid var(--time-bg);
+  background: none;
+  color: var(--time-bg);
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: default;
+  overflow: hidden;
+}

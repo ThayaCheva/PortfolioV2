@@ -3,7 +3,7 @@ import './css/Main.css'
 import PDF from '../files/Thaya_IT_CV.pdf'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 export default function Main() {
     const words = [
@@ -51,7 +51,7 @@ export default function Main() {
                 <div className="intro">
                     <h1 className='name'>Hi, <span className="highlight">I'm Thaya Chevaphatrakul</span></h1>
                     <p className="tagline" style={fade}>{`<>${word}</>`}</p>
-                    <a href={PDF} target="_blank"className="btn mainBtn"><FontAwesomeIcon icon={faFile}/><h4>My Resume</h4></a>
+                    <a href={PDF} target="_blank"className="btn mainBtn"><FontAwesomeIcon icon={faDownload}/><h4>My Resume</h4></a>
                 </div>
             </div>
         </section>

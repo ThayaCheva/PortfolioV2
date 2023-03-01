@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Card(props) {
@@ -17,7 +17,14 @@ export default function Card(props) {
               </div>
                 <h3 className="time">{props.time}</h3>
                 <p>{props.desc}</p>
-              <a href={props.link} target="_blank" className="btn code-btn"><FontAwesomeIcon icon={faGithub} className="code-icon"/><h4>Code</h4></a>
+                <div className="btn-container">
+                  {
+                  props.video != "" ? 
+                  <a href={props.video} target="_blank" className="btn code-btn"><FontAwesomeIcon icon={faYoutube} className="code-icon"/><h4>Video</h4></a> : 
+                  <a className="empty-btn">Video</a>
+                  }
+                  <a href={props.link} target="_blank" className="btn code-btn"><FontAwesomeIcon icon={faGithub} className="code-icon"/><h4>Code</h4></a>
+                </div>
             </div>
           </div>
         </div>
