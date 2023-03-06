@@ -33,8 +33,16 @@ export default function Projects() {
       time:"2022", 
       img:require("../img/catalyst.JPG"),
       link:"https://github.com/ThayaCheva/Star-Wars-Final",
-      desc:"A game similar to Galaga made using Java and the Bagel library as part of the Catalyst 2022 Hackathon.",
+      desc:"A game similar to Galaga made using Java and the Bagel library as part of the Catalyst 2022 Hackathon. The game is also programmed using Object-Oriented Programming.",
       video: "https://www.youtube.com/watch?v=negJG6icGMI"
+    },
+    {
+      title:"Bingo", 
+      time:"2023 WIP", 
+      img:require("../img/bingo.JPG"),
+      link:"https://github.com/ThayaCheva/Bingo",
+      desc:"Play bingo with your friend. A two-player bingo game made using React. This project is currently work-in-progress.",
+      video: ""
     }
   ]
 
