@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.c6a2bfc0.css",
-    "main.js": "/static/js/main.cab7f05a.js",
+    "main.js": "/static/js/main.52bc0aa6.js",
     "static/media/proj3.PNG": "/static/media/proj3.f854e27b66efe4c44a09.PNG",
     "static/media/react-logo.png": "/static/media/react-logo.81ed438b18e24116794d.png",
-    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.fab2e73a2f6769dc8581.pdf",
+    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.840b09823b7775f9c9ee.pdf",
     "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/python-logo.png": "/static/media/python-logo.dc906e9aa21b2a930657.png",
@@ -21,10 +21,10 @@
     "static/media/java-logo.png": "/static/media/java-logo.6c64373d3b7415758078.png",
     "index.html": "/index.html",
     "main.c6a2bfc0.css.map": "/static/css/main.c6a2bfc0.css.map",
-    "main.cab7f05a.js.map": "/static/js/main.cab7f05a.js.map"
+    "main.52bc0aa6.js.map": "/static/js/main.52bc0aa6.js.map"
   },
   "entrypoints": [
     "static/css/main.c6a2bfc0.css",
-    "static/js/main.cab7f05a.js"
+    "static/js/main.52bc0aa6.js"
   ]
 }
