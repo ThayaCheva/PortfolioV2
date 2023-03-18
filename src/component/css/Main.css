@@ -13,9 +13,9 @@
   }
 
   .frame {
-    width: 515px;
-    height: 515px;
-    margin-right: 3rem;
+    width: 50vh;
+    height: 50vh;
+    /* margin-right: 3rem; */
   }
   
   .frame img {
