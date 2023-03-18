@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6a2bfc0.css",
-    "main.js": "/static/js/main.52bc0aa6.js",
+    "main.css": "/static/css/main.2946f26e.css",
+    "main.js": "/static/js/main.42deaedd.js",
     "static/media/proj3.PNG": "/static/media/proj3.f854e27b66efe4c44a09.PNG",
     "static/media/react-logo.png": "/static/media/react-logo.81ed438b18e24116794d.png",
-    "static/media/Thaya_IT_CV.pdf": "/static/media/Thaya_IT_CV.840b09823b7775f9c9ee.pdf",
+    "static/media/Thaya_Resume.pdf": "/static/media/Thaya_Resume.0e78425b2615bf8415b1.pdf",
     "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/python-logo.png": "/static/media/python-logo.dc906e9aa21b2a930657.png",
     "static/media/catalyst.JPG": "/static/media/catalyst.f75d5f43c02cd11c487e.JPG",
     "static/media/port1.jpg": "/static/media/port1.1a095b25152a6ea3544c.jpg",
-    "static/media/bingo.JPG": "/static/media/bingo.1d69bb74eb77771d393b.JPG",
     "static/media/mysql-logo.png": "/static/media/mysql-logo.2f2132d4838335ce808e.png",
     "static/media/Tenzi.JPG": "/static/media/Tenzi.de439e1c4ffc02389073.JPG",
+    "static/media/bingo.JPG": "/static/media/bingo.da9c616ec5c9a15d00c4.JPG",
     "static/media/shadow.JPG": "/static/media/shadow.a0919d3a3cd1f5d076ee.JPG",
     "static/media/c-logo.png": "/static/media/c-logo.bbbbbabc8c191bfb99bf.png",
     "static/media/css-logo.png": "/static/media/css-logo.bc75ccc78e3bf74f8aed.png",
@@ -20,11 +20,11 @@
     "static/media/javascript-logo.png": "/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "static/media/java-logo.png": "/static/media/java-logo.6c64373d3b7415758078.png",
     "index.html": "/index.html",
-    "main.c6a2bfc0.css.map": "/static/css/main.c6a2bfc0.css.map",
-    "main.52bc0aa6.js.map": "/static/js/main.52bc0aa6.js.map"
+    "main.2946f26e.css.map": "/static/css/main.2946f26e.css.map",
+    "main.42deaedd.js.map": "/static/js/main.42deaedd.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6a2bfc0.css",
-    "static/js/main.52bc0aa6.js"
+    "static/css/main.2946f26e.css",
+    "static/js/main.42deaedd.js"
   ]
 }
