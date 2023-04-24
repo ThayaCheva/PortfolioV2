@@ -21,7 +21,7 @@ html {
   --background: #161B22;
   --primary: #2CB67D;
   --secondary: #999B9E;
-  --tertiary: #1F242C;
+  --tertiary: rgba(31, 36, 44, 0.99);
   --white: #fff;
   --grey-1: #afafaf;
   --grey-2: #202328;

@@ -44,10 +44,8 @@ export default function Main() {
 
     return (
         <section id="main">
+            <div className="bg"></div>
             <div className="main-container">
-            <div className="frame">
-                <img alt="profile" src={require("../img/port1.jpg")}></img>
-            </div>
                 <div className="intro">
                     <h1 className='name'>Hi, <span className="highlight">I'm Thaya Chevaphatrakul</span></h1>
                     <p className="tagline" style={fade}>{`<>${word}</>`}</p>
