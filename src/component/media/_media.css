@@ -80,6 +80,10 @@
         font-size: 13px !important;
     }
 
+    .tagline {
+        font-size: 16px !important;
+    }
+
     .icon {
         width: 40px;
         height: 40px;
@@ -92,6 +96,21 @@
         font-size: 12px;
         margin: 0;
     }
+    
+    .about-me .section-header {
+        transform: translateY(80px);
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .click-me {
+        transform: translateY(80px);
+    }
+    
+    .about-show .section-header{
+        transform: translateY(-5px);
+        transition: all 0.4s ease-in-out;
+    }
+
 
     #navbar a {
         font-size: 18px;
@@ -103,11 +122,11 @@
     }
 
     .about-show {
-        width: 280px;
+        width: 320px;
     }
 
     .about-me {
-        width: 280px;
+        /* width: 280px; */
     }
 
     .about-show p {
