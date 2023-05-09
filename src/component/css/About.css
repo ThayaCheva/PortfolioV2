@@ -81,7 +81,7 @@
     display: flex;
     margin-bottom: 4rem;
     transform: translateY(70px);
-    width: 568px;
+    max-width: 568px;
   }
 
   .education-heading {

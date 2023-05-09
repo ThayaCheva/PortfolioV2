@@ -61,6 +61,10 @@
   .mainBtn h4 {
     margin-left: 1rem;
   }
+
+  .btn {
+    transition: all 0.4s ease-in-out;
+  }
   
   .btn::before {
     content: "";
@@ -68,13 +72,14 @@
     background: var(--primary);
     border-radius: inherit;
     transform: translateY(100%);
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
     z-index: -1;
   }
   
   .btn:hover::before {
+    position: absolute;
     transform: translateY(0%);
     width: inherit;
     height: inherit;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
   }

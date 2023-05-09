@@ -5,6 +5,14 @@ import './css/Projects.css'
 export default function Projects() {
   const cards = [
     {
+      title:"LastBite | Melbourne Hack Winner", 
+      time:"2023", 
+      img:require("../img/hackathon.JPG"),
+      link:"https://github.com/LordPachimari/last-bite.git",
+      desc:"LastBite is a project developed for the 2023 Melbourne Hack Hackathon. LastBite is a service which essentially acts as an online food marketplace. It addresses the problem of achieving responsible consumption and production by giving a platform through which users can give away unwanted food or leftover food and others can choose to collect it.",
+      video: "https://www.youtube.com/watch?v=J-vVu0iHTps"
+    },
+    {
       title:"Front-End Development",
       time:"2018-2019",
       img:require("../img/proj3.PNG"),
@@ -21,27 +29,19 @@ export default function Projects() {
       video: ""
     },
     {
-      title:"Tenzi Game",
-      time:"2022-2023",
-      img:require("../img/Tenzi.JPG"),
-      link:"https://github.com/ThayaCheva/React-Practice/tree/main/tenzies",
-      desc:"Tenzi is game where the goal is roll 10 dices until all the dices face are the same. The game is made using HTML, CSS, JavaSript and React. The projects also utilizes hooks such as useState and useEffect.",
-      video: ""
-    },
-    {
-      title:"Hackthon Project", 
-      time:"2022", 
-      img:require("../img/catalyst.JPG"),
-      link:"https://github.com/ThayaCheva/Star-Wars-Final",
-      desc:"A game similar to Galaga made using Java and the Bagel library as part of the Catalyst 2022 Hackathon. The game is also programmed using Object-Oriented Programming.",
-      video: "https://www.youtube.com/watch?v=negJG6icGMI"
-    },
-    {
       title:"Bingo", 
       time:"2023 WIP", 
       img:require("../img/bingo.JPG"),
       link:"https://github.com/ThayaCheva/Bingo",
       desc:"Play bingo with your friend. A two-player bingo game made using React. This project is currently work-in-progress.",
+      video: ""
+    },
+    {
+      title:"Tenzi Game",
+      time:"2022-2023",
+      img:require("../img/Tenzi.JPG"),
+      link:"https://github.com/ThayaCheva/React-Practice/tree/main/tenzies",
+      desc:"Tenzi is game where the goal is roll 10 dices until all the dices face are the same. The game is made using HTML, CSS, JavaSript and React. The projects also utilizes hooks such as useState and useEffect.",
       video: ""
     }
   ]

@@ -20,20 +20,20 @@ export default function About() {
                   <h1>About <span className="highlight">Me</span></h1>
                 </div>
                 <p className={`click-me ${toggle ? "hide" : ""}`}>{`<>Click Me</>`}</p>
-                <p className={`${toggle ? "" : "hide"}`}>I'm an international student from Thailand and have studied in Thailand and Vietnam prior to coming to Australia. I'm very interested in computers and software. My current main focus is in the area of Web Design and Development.
+                <p className={`${toggle ? "" : "hide"}`}>A diligent third-year undergraduate pursuing a Bachelor of Science degree and majoring in Computing and Software System as well as possessing a diverse skill set in both computer hardware and software.
                 </p>
             </div>
           </div>
           <div className="right-container reveal">
             <Education 
-                name={"BANGKOK PREP"} 
-                date={"2018-2020"}
-                info={"<>I attended Bangkok International Preparatory & Secodary School in Thailand and completed the A levels there. During this time, I've created the front-end for a website as my EPQ projects and participated in several communty services and activities</>"}
+                name={"UNIVERSITY OF MELBOURNE"} 
+                date={"2021-CURR"}
+                info={"<>Enrolled in the University of Melbourne, majoring in Computing and Software Systems. During my time at University I've participated in Hackathons and other activites.I'm currently in my third year with a current WAM of 73.538</>"}
             />
             <Education 
-                name={"UNIVERSITY OF MELBOURNE"} 
-                date={"2020-CURR"}
-                info={"<>Enrolled in the University of Melbourne, majoring in Computing and Software Systems. During my time at University I've participated in Hackathons and other activites.I'm currently in my third year with a current WAM of 73.538</>"}
+                name={"BANGKOK PREP"} 
+                date={"2018-2020"}
+                info={"<>Attended Bangkok International Preparatory & Secodary School in Thailand and completed the A levels there. During this time, I've created the front-end for a website as my EPQ projects and participated in several communty services and activities</>"}
             />
           </div>
         </div>
