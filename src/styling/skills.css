@@ -1,0 +1,156 @@
+#skills {
+  background: var(--primary);
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+}
+#skills .line-black, #skills .line-white {
+  position: absolute;
+  width: 240px;
+  z-index: 3;
+}
+#skills .line-black {
+  top: 0;
+  right: 0;
+  transform: scale(-1);
+}
+#skills .line-white {
+  bottom: 0;
+  left: 0;
+}
+#skills::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40% !important;
+  background-color: var(--dark);
+  bottom: 0;
+  z-index: 2;
+}
+#skills::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100% !important;
+  background-image: url("../images/wave-style-jap.jpg");
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.05;
+}
+#skills .skills-container {
+  margin: 2rem;
+  position: relative;
+  z-index: 4;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  aspect-ratio: 1/1;
+  padding: 3rem;
+  border-radius: 50%;
+}
+#skills .skills-container .header {
+  margin-bottom: 2.5rem !important;
+}
+#skills .skills-container h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+#skills .skills-container .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#skills .skills-container .skills-list .skills-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--dark);
+  border-radius: 15px;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in;
+  z-index: 2;
+}
+#skills .skills-container .skills-list .skills-item:hover {
+  background: var(--secondary);
+  color: var(--light);
+  cursor: default;
+}
+#skills .skills-container .skills-2 {
+  padding: 0 3rem;
+}
+#skills .skills-container::before {
+  position: absolute;
+  content: "";
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  border: 10px solid var(--light);
+  z-index: 1;
+}
+
+@media screen and (max-width: 580px) {
+  .line-black, .line-white {
+    width: 35% !important;
+  }
+  .skills-container {
+    padding: 1rem !important;
+  }
+  .skills-container::before {
+    border: 5px solid var(--light) !important;
+  }
+  .skills-container .skills-list {
+    font-size: 14px;
+    padding: 0 2rem;
+  }
+  .skills-container .skills-list .skills-item {
+    margin: 0.3rem !important;
+  }
+  .skills-container .skills-2 {
+    padding: 0 6rem !important;
+  }
+}
+@media screen and (max-width: 505px) {
+  .skills-list {
+    padding: 0 !important;
+  }
+  .skills-2 {
+    padding: 0 !important;
+  }
+  h2 {
+    margin: 0.5rem 0 0.5rem 0 !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .skills-container .skills-2 {
+    padding: 0 1rem !important;
+  }
+}
+@media screen and (max-width: 435px) {
+  .skills-container .skills-list {
+    padding: 0 0.8rem;
+    font-size: 12px;
+  }
+  .skills-container .skills-list .skills-item {
+    margin: 0.1rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .skills-container .skills-list {
+    font-size: 10px;
+  }
+  .skills-container .skills-2 {
+    padding: 0 2rem !important;
+  }
+  h2 {
+    font-size: 14px;
+    margin: 0.25rem 0 0.25rem 0 !important;
+  }
+}/*# sourceMappingURL=skills.css.map */
