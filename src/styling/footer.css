@@ -36,7 +36,7 @@
 #footer .footer-container ul {
   display: flex;
   align-items: center;
-  min-width: 30vw;
+  min-width: 20vw;
   justify-content: space-around;
 }
 #footer .footer-container ul .cross {

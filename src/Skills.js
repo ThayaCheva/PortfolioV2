@@ -5,9 +5,7 @@ export default function Skills() {
         <section id="skills">
             <div className="skills-container">
                 <div className="header">
-                    <img className="cross" src={require('./images/cross-black.png')}/>
                     <h1>MY SKILLS</h1>
-                    <img className="cross" src={require('./images/cross-black.png')}/>    
                 </div>
                 <h2>Langauges:</h2>
                 <div className="skills-list">

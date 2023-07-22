@@ -12,9 +12,12 @@
 
 :root {
     --light: #fff;
-    --dark: #32303A;
+    --dark: #31303E;
     --primary: #FCF0F0;
     --secondary: #E34856;
+    --primary-hover: #dbcbcb;
+    --secondary-hover: rgb(184, 64, 74);
+    --light-hover: #dad9d9;
 }
 
 html {
@@ -95,7 +98,7 @@ p {
         align-items: center;
         justify-content: space-around;
         min-height: 6rem;
-        width: 60vw;
+        width: 100%;
         .nav-item {
             position: relative;
             transition: all 0.2s ease-in-out;
@@ -139,10 +142,16 @@ p {
 
 .landing {
     width: 100%;
+    background: var(--primary);
+    .background {
+        position: absolute;
+        opacity: 0.05;
+        z-index: -1;
+    }
     .art {
+        z-index: 5;
         position: relative;
         top: 0;
-        background: var(--primary);
         width: 100%;
         padding-top: 5rem;
         overflow: hidden;
@@ -193,17 +202,16 @@ p {
     display: flex;
     margin: 1rem;
     max-height: 2rem;
-    
     h1 {
         position: relative;
-        font-size: 1.4rem;
+        font-size: 32px;
         margin: 0 1.5rem;
     }
 
     .cross {
         font-weight: 200;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         transform: translateY(2.5px);
     }
 
@@ -211,7 +219,7 @@ p {
         position: absolute;
         content: "";
         width: 50%;
-        transform: translate(50%, 35px);
+        transform: translate(50%, 55px);
         height: 2px;
         background: var(--secondary);
     }
@@ -225,20 +233,22 @@ p {
         }
         .mobile-nav {
             position: relative;
-            display: flex !important;
-            align-items: center;
+            display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 100%;
             min-height: 6rem;
             z-index: 999;
             .logo {
                 text-align: center;
+                max-width: 40% !important;
                 flex-grow: 1;
                 transform: translateX(20px);
             }
             .ham-menu {
                 text-align: right;
                 transform: translateX(-20px);
+                grid-column: span 1;
             }
             .icon {
                 width: 25px !important;
@@ -247,7 +257,7 @@ p {
             }
         }
         .drop-menu {
-            z-index: 999;
+            z-index: 998;
             position: relative;
             display: block;
             width: 100%;
@@ -264,7 +274,6 @@ p {
                     width: 100%;
                     a {
                         display: inline-block;
-                        text-decoration: none;
                         width: 100%;
                     }
                 }

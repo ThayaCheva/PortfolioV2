@@ -33,7 +33,7 @@ export default function Projects() {
             folder: require.context(`./images/project-image/lastbite`, false)},
             
             {title: "ABYSS GUIDE", 
-            desc: "The website is based on the show Made In Abyss and functions as a basic guide or introduction. This project is created using HTML and CSS.Furthermore, the page is also responsive to mobile devices.", 
+            desc: "The website is based on the show Made In Abyss and functions as a basic guide or introduction. This project is created using HTML and CSS. Furthermore, the page is also responsive to mobile devices.", 
             github: "https://github.com/ThayaCheva/Web-Development/tree/master/Made%20In%20Abyss%20Website_2", 
             video: "https://www.youtube.com/watch?v=DVy6FzfPX1M", 
             path: 'mia',
@@ -46,14 +46,14 @@ export default function Projects() {
             path: "pirate",
             folder: require.context(`./images/project-image/pirate`, false)},
 
-            {title: "PROJECT 4", desc: "", github: "", video: "", image: ""},
+            {title: "PACMAN", desc: "", github: "", video: "", image: ""},
             {title: "PROJECT 5", desc: "", github: "", video: "", image: ""},
         ]
 
     const MainCarousel = () => {
         const settings = {
             dots: false,
-            infinite: true,
+            infinite: false,
             speed: 500,
             slidesToShow: 3, // Display three items at a time
             slidesToScroll: 1,
@@ -63,16 +63,15 @@ export default function Projects() {
 
         if (window.innerWidth <= 1000) {
             settings.vertical = true;
-            settings.arrows = false;
+
             settings.verticalSwiping = true;
-            settings.swipe = true;
-            settings.swipeToSlide = true;
         }
 
         const projectsElements = projects.map((p, index) => {
             if (index % 3 === 0) {
                 return (
                     <div key={index} className={`project-item item-1`} onClick={() => changeState(p, "item-1")}>
+                        {window.innerWidth <= 1000 ? <img className="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border"src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             <img className="cross" src={require("./images/cross-white.png")} alt="cross-white"></img>
                             {p.title}
@@ -84,6 +83,7 @@ export default function Projects() {
             else if (index % 3 === 1) { 
                 return (
                     <div key={index} className={`project-item item-2`} onClick={() => changeState(p, "item-2")}>
+                        {window.innerWidth <= 1000 ? <img className="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border"src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             <img className="cross" src={require("./images/cross-black.png")} alt="cross-black"></img>
                             {p.title}
@@ -95,6 +95,7 @@ export default function Projects() {
             else {
                 return (
                     <div key={index} className={`project-item item-3`} onClick={() => changeState(p, "item-3")}>
+                        {window.innerWidth <= 1000 ? <img className="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border"src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             <img className="cross" src={require("./images/cross-black.png")} alt="cross-black"></img>
                             {p.title}
@@ -169,6 +170,7 @@ export default function Projects() {
                 </div>}
                 {hideProject && <div className="project-display">
                     <div className={`project-item ${selectedProject[1]}`}  onClick={() => handleHideProject()}>
+                    {window.innerWidth <= 1000 ? <img className="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border"src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             {selectedProject[1] !== "item-1" ? <img className="cross" src={require("./images/cross-black.png")} alt="cross-black"></img> : <img className="cross" src={require("./images/cross-white.png")} alt="cross-white"></img>}
                             {selectedProject[0].title}

@@ -1,7 +1,22 @@
 #projects {
   width: 100%;
-  height: 90vh;
-  overflow: hidden;
+}
+#projects .projects-container .main-carousel-container .slick-prev, #projects .projects-container .main-carousel-container .slick-next {
+  z-index: 999;
+  transform: translateY(-60px);
+  transition: all 0.1s ease-in-out;
+}
+#projects .projects-container .main-carousel-container .slick-prev:hover, #projects .projects-container .main-carousel-container .slick-next:hover {
+  transform: translateY(-60px) scale(1.2);
+}
+#projects .projects-container .main-carousel-container .slick-prev {
+  transform: translateY(-60px) scaleX(-1);
+}
+#projects .projects-container .main-carousel-container .slick-prev:hover {
+  transform: translateY(-60px) scale(-1.2, 1.2);
+}
+#projects .projects-container .main-carousel-container .cross {
+  opacity: 0 !important;
 }
 #projects .projects-container .project-item {
   box-sizing: border-box;
@@ -14,26 +29,46 @@
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease-in-out;
-  border-right: 1px solid var(--dark);
+  position: relative;
 }
 #projects .projects-container .project-item:hover {
-  filter: brightness(0.8);
   cursor: pointer;
+}
+#projects .projects-container .project-item .project-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.05;
 }
 #projects .projects-container .item-1 {
   background: var(--secondary);
   color: var(--light);
+  border: 25px solid var(--secondary);
+}
+#projects .projects-container .item-1:hover {
+  background: var(--secondary-hover);
+  border: 25px solid var(--secondary-hover);
 }
 #projects .projects-container .item-2 {
   background: var(--primary);
   color: var(--dark);
+  border: 25px solid var(--primary);
+}
+#projects .projects-container .item-2:hover {
+  background: var(--primary-hover);
+  border: 25px solid var(--primary-hover);
 }
 #projects .projects-container .item-3 {
   background: var(--light);
   color: var(--dark);
+  border: 25px solid var(--light);
+}
+#projects .projects-container .item-3:hover {
+  background: var(--light-hover);
+  border: 25px solid var(--light-hover);
 }
 #projects .projects-container .project-title {
-  transform: translateY(-50px);
   display: flex;
   font-size: 42px;
   text-align: center;
@@ -95,29 +130,14 @@
   background-position: center;
   background-size: cover;
 }
-#projects .slick-prev:before, #projects .slick-next:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 3px solid var(--dark);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 1;
-  transition: all 0.1s ease-in-out;
-  opacity: 1;
-}
-#projects .slick-prev:hover::before, #projects .slick-next:hover::before {
-  width: 110%;
-  height: 110%;
+#projects .slick-prev::before, #projects .slick-next::before {
+  display: none;
 }
 #projects .slick-prev {
   left: 100px;
 }
 #projects .slick-next {
   right: 100px;
-  transform: translateY(-5px) scaleX(-1);
 }
 
 @media screen and (max-width: 1000px) {
@@ -129,7 +149,7 @@
     height: 30vh !important;
     writing-mode: horizontal-tb !important;
     text-orientation: mixed;
-    border: none !important;
+    letter-spacing: 0.2rem;
   }
   .projects-container .main-carousel-container .project-item:hover {
     filter: brightness(0.8);
@@ -142,9 +162,30 @@
   .projects-container .main-carousel-container .project-title .cross {
     width: 7% !important;
   }
+  .projects-container .main-carousel-container .slick-next {
+    left: 48%;
+    transform: rotate(90deg) !important;
+  }
+  .projects-container .main-carousel-container .slick-next:hover {
+    transform: scale(1.2) rotate(90deg);
+  }
+  .projects-container .main-carousel-container .slick-prev {
+    top: 5% !important;
+    left: 48% !important;
+    transform: rotate(90deg) scaleX(-1) !important;
+  }
+  .projects-container .main-carousel-container .slick-prev:hover {
+    transform: rotate(90deg) scale(-1.2, 1.2);
+  }
+  .projects-container .project-border {
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    top: 0;
+    opacity: 0.1 !important;
+  }
   .projects-container .project-display {
     flex-direction: column;
-    height: 100%;
   }
   .projects-container .project-display .project-item {
     width: 100% !important;
@@ -160,18 +201,16 @@
   .projects-container .project-display .project-title {
     transform: translateY(0px) !important;
     width: 35rem;
+    transform: translateX(0) !important;
+    width: 70% !important;
   }
   .projects-container .project-display .project-title .cross {
     width: 7% !important;
   }
-  .projects-container .project-display .project-title {
-    transform: translateX(0) !important;
-    width: 70% !important;
-  }
   .projects-container .project-display .project-info {
     width: 100% !important;
-    height: 100% !important;
     transform: translateY(0px) !important;
+    padding: 5rem !important;
   }
   .projects-container .project-display .project-info p {
     width: 70% !important;

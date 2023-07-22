@@ -17,14 +17,17 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <ul className="desktop-nav">
-                <a href="#home" className="nav-item">HOME</a>
-                <a href="#about" className="nav-item">ABOUT</a>
                 <a href="" className="logo">{`<THAYA/CHEVA>`}</a>
-                <a href="#projects" className="nav-item">PROJECTS</a>
-                <a href="#footer" className="nav-item">CONTACT</a>
+                <div>
+                    <a href="#home" className="nav-item">HOME</a>
+                    <a href="#about" className="nav-item">ABOUT</a>
+                    <a href="#projects" className="nav-item">PROJECTS</a>
+                    <a href="#footer" className="nav-item">CONTACT</a>
+                </div>
             </ul>
             <div className="mobile-nav">
-                <a href="" className="logo">{`<THAYA/CHEVA>`}</a>
+                <div></div>
+                <a href="#home" className="logo">{`<THAYA/CHEVA>`}</a>
                 <div className="ham-menu " onClick={() => expandMenu()}>
                     {toggle == 'show-menu' && <FontAwesomeIcon className="icon" icon={faBars}/>}
                     {toggle == 'close-menu' && <FontAwesomeIcon className="icon" icon={faXmark}/>}
@@ -32,10 +35,10 @@ export default function Navbar() {
             </div>
             <div className={`drop-menu ${toggle}`}>
                 <ul>
-                    <li><a href="#home"><FontAwesomeIcon icon={faXmark}/>  HOME  <FontAwesomeIcon icon={faXmark}/></a></li>
-                    <li><a href="#about"><FontAwesomeIcon icon={faXmark}/>  ABOUT  <FontAwesomeIcon icon={faXmark}/></a></li>
-                    <li><a href="#projects"><FontAwesomeIcon icon={faXmark}/>  PROJECTS  <FontAwesomeIcon icon={faXmark}/></a></li>
-                    <li><a href="#footer"><FontAwesomeIcon icon={faXmark}/>  CONTACT  <FontAwesomeIcon icon={faXmark}/></a></li>
+                    <li><a href="#home">  HOME  </a></li>
+                    <li><a href="#about">  ABOUT  </a></li>
+                    <li><a href="#projects">  PROJECTS  </a></li>
+                    <li><a href="#footer">  CONTACT  </a></li>
                 </ul>
             </div>
         </nav>
