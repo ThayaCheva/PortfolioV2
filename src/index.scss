@@ -144,6 +144,7 @@ p {
 .landing {
     width: 100%;
     background: var(--primary);
+    overflow: hidden !important;
     .background {
         position: absolute;
         opacity: 0.05;
@@ -155,13 +156,13 @@ p {
         top: 0;
         width: 100%;
         padding-top: 5rem;
-        overflow: hidden;
         .art-container {
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             .sun-container {
+                transform: translateY(-5px);
                 background-image: url("./images/sun.png");
                 background-repeat: no-repeat;
                 background-size: cover;

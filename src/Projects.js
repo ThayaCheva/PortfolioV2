@@ -68,7 +68,7 @@ export default function Projects() {
 
     const MainCarousel = () => {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: false,
             speed: 500,
             slidesToShow: 3, // Display three items at a time
@@ -79,7 +79,6 @@ export default function Projects() {
 
         if (window.innerWidth <= 1000) {
             // settings.vertical = true;
-
             // settings.verticalSwiping = true;
             settings.slidesToShow = 1;
         }

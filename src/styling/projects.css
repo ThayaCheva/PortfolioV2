@@ -21,6 +21,9 @@
 #projects .slick-next {
   right: 100px;
 }
+#projects .slick-dots {
+  transform: translateY(-80px);
+}
 #projects .projects-container .main-carousel-container .slick-prev, #projects .projects-container .main-carousel-container .slick-next {
   transform: translateY(-60px);
 }

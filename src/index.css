@@ -139,6 +139,7 @@ p {
 .landing {
   width: 100%;
   background: var(--primary);
+  overflow: hidden !important;
 }
 .landing .background {
   position: absolute;
@@ -151,7 +152,6 @@ p {
   top: 0;
   width: 100%;
   padding-top: 5rem;
-  overflow: hidden;
 }
 .landing .art .art-container {
   height: 100%;
@@ -160,6 +160,7 @@ p {
   align-items: flex-end;
 }
 .landing .art .art-container .sun-container {
+  transform: translateY(-5px);
   background-image: url("./images/sun.png");
   background-repeat: no-repeat;
   background-size: cover;
