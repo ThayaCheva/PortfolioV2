@@ -1,10 +1,28 @@
 #projects {
   width: 100%;
 }
-#projects .projects-container .main-carousel-container .slick-prev, #projects .projects-container .main-carousel-container .slick-next {
+#projects .slick-prev, #projects .slick-next {
   z-index: 999;
-  transform: translateY(-60px);
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/arrow.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   transition: all 0.1s ease-in-out;
+}
+#projects .slick-prev::before, #projects .slick-next::before {
+  display: none;
+}
+#projects .slick-prev {
+  left: 100px;
+}
+#projects .slick-next {
+  right: 100px;
+}
+#projects .projects-container .main-carousel-container .slick-prev, #projects .projects-container .main-carousel-container .slick-next {
+  transform: translateY(-60px);
 }
 #projects .projects-container .main-carousel-container .slick-prev:hover, #projects .projects-container .main-carousel-container .slick-next:hover {
   transform: translateY(-60px) scale(1.2);
@@ -14,9 +32,6 @@
 }
 #projects .projects-container .main-carousel-container .slick-prev:hover {
   transform: translateY(-60px) scale(-1.2, 1.2);
-}
-#projects .projects-container .main-carousel-container .cross {
-  opacity: 0 !important;
 }
 #projects .projects-container .project-item {
   box-sizing: border-box;
@@ -134,66 +149,10 @@
   justify-content: space-around;
   margin: 1rem;
 }
-#projects .slick-prev, #projects .slick-next {
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-  background-image: url("../images/arrow.png");
-  background-position: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-#projects .slick-prev::before, #projects .slick-next::before {
-  display: none;
-}
-#projects .slick-prev {
-  left: 100px;
-}
-#projects .slick-next {
-  right: 100px;
-}
 
 @media screen and (max-width: 1000px) {
   .projects-container {
     height: 100% !important;
-  }
-  .projects-container .main-carousel-container {
-    height: 100% !important;
-  }
-  .projects-container .main-carousel-container .project-item {
-    width: 100% !important;
-    height: 30vh !important;
-    writing-mode: horizontal-tb !important;
-    text-orientation: mixed;
-    letter-spacing: 0.2rem;
-  }
-  .projects-container .main-carousel-container .project-item:hover {
-    filter: brightness(0.8);
-    cursor: pointer;
-  }
-  .projects-container .main-carousel-container .project-title {
-    transform: translateY(0px) !important;
-    width: 35rem;
-  }
-  .projects-container .main-carousel-container .project-title .cross {
-    width: 7% !important;
-  }
-  .projects-container .main-carousel-container .slick-next {
-    top: 90% !important;
-    left: 46.5% !important;
-    transform: rotate(90deg) !important;
-  }
-  .projects-container .main-carousel-container .slick-next:hover {
-    transform: scale(1.2) rotate(90deg);
-  }
-  .projects-container .main-carousel-container .slick-prev {
-    top: 5% !important;
-    left: 46.5% !important;
-    transform: rotate(90deg) scaleX(-1) !important;
-  }
-  .projects-container .main-carousel-container .slick-prev:hover {
-    transform: rotate(90deg) scale(-1.2, 1.2);
   }
   .projects-container .project-border {
     position: absolute;
@@ -250,9 +209,6 @@
   .project-title {
     font-size: 32px !important;
     width: 70% !important;
-  }
-  .slick-next, .slick-prev {
-    left: 46% !important;
   }
   .exit-button {
     width: 25px !important;

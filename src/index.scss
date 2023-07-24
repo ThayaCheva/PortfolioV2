@@ -234,14 +234,14 @@ p {
         }
         .mobile-nav {
             position: relative;
-            display: flex;
+            display: flex !important;
             justify-content: space-between;
             align-items: center;
             width: 100%;
             min-height: 6rem;
             z-index: 999;
             .logo {
-                text-align: center;
+                text-align: center !important;
                 max-width: 40% !important;
                 flex-grow: 1;
                 transform: translateX(20px);
@@ -300,13 +300,13 @@ p {
     }
 
     .logo {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     .header {
         h1 {
             margin: 0 0.5rem;
-            font-size: 20px;
+            font-size: 15px;
         }
         h1::before {
             transform: translate(50%, 30px) !important;
@@ -314,7 +314,7 @@ p {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 385px) {
     .logo {
         font-size: 14px !important;
     }
@@ -323,5 +323,11 @@ p {
         h1 {
             font-size: 14px !important;
         }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .logo {
+        transform: translateX(10px) !important;
     }
 }

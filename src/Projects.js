@@ -78,16 +78,17 @@ export default function Projects() {
         };
 
         if (window.innerWidth <= 1000) {
-            settings.vertical = true;
+            // settings.vertical = true;
 
-            settings.verticalSwiping = true;
+            // settings.verticalSwiping = true;
+            settings.slidesToShow = 1;
         }
 
         const projectsElements = projects.map((p, index) => {
             if (index % 3 === 0) {
                 return (
                     <div key={index} className={`project-item item-1`} onClick={() => changeState(p, "item-1")}>
-                        {window.innerWidth <= 1000 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>
@@ -97,7 +98,7 @@ export default function Projects() {
             else if (index % 3 === 1) { 
                 return (
                     <div key={index} className={`project-item item-2`} onClick={() => changeState(p, "item-2")}>
-                        {window.innerWidth <= 1000 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>
@@ -107,7 +108,7 @@ export default function Projects() {
             else {
                 return (
                     <div key={index} className={`project-item item-3`} onClick={() => changeState(p, "item-3")}>
-                        {window.innerWidth <= 1000 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>

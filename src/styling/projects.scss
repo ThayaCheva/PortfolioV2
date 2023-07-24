@@ -1,11 +1,31 @@
 #projects {
     width: 100%;
+    .slick-prev, .slick-next {
+        z-index: 999;
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/arrow.png");
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.1s ease-in-out;
+        &::before {
+            display: none;
+        }
+    }
+    
+    .slick-prev {
+        left: 100px;
+    }
+    .slick-next {
+        right: 100px;
+    }
+    
     .projects-container {
         .main-carousel-container {
             .slick-prev, .slick-next {
-                z-index: 999;
                 transform: translateY(-60px);
-                transition: all 0.1s ease-in-out;
                 &:hover {
                     transform: translateY(-60px) scale(1.2);
                 }
@@ -15,9 +35,6 @@
                 &:hover {
                     transform: translateY(-60px) scale(-1.2, 1.2);
                 }
-            }
-            .cross {
-                opacity: 0 !important;
             }
         }
         .project-item {
@@ -138,69 +155,32 @@
             }
         }
     }
-    
-    .slick-prev, .slick-next {
-        z-index: 999;
-        width: 50px;
-        height: 50px;
-        background-image: url("../images/arrow.png");
-        background-position: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        &::before {
-            display: none;
-        }
-    }
-    
-    .slick-prev {
-        left: 100px;
-    }
-    .slick-next {
-        right: 100px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
     .projects-container {
         height: 100% !important;    
-        .main-carousel-container {
-            height: 100% !important;
-            .project-item {
-                width: 100% !important;
-                height: 30vh!important;
-                writing-mode: horizontal-tb !important;
-                text-orientation: mixed;
-                letter-spacing: 0.2rem;
-                &:hover {
-                    filter: brightness(0.8);
-                    cursor: pointer;
-                }
-            }
-            .project-title {
-                transform: translateY(0px) !important;
-                .cross {
-                    width: 7% !important;
-                }
-                width: 35rem;    
-            }
-            .slick-next {
-                top: 90% !important;
-                left: 46.5% !important;
-                transform: rotate(90deg) !important;
-                &:hover {
-                    transform: scale(1.2) rotate(90deg);
-                }
-            }
-            .slick-prev {
-                top: 5% !important;
-                left: 46.5% !important;
-                transform: rotate(90deg) scaleX(-1) !important;
-                &:hover {
-                    transform: rotate(90deg) scale(-1.2, 1.2);
-                }
-            }
-        }
+        // .main-carousel-container {
+        //     height: 100% !important;
+        //     .project-item {
+        //         width: 100% !important;
+        //         height: 30vh!important;
+        //         writing-mode: horizontal-tb !important;
+        //         text-orientation: mixed;
+        //         letter-spacing: 0.2rem;
+        //         &:hover {
+        //             filter: brightness(0.8);
+        //             cursor: pointer;
+        //         }
+        //     }
+        //     .project-title {
+        //         transform: translateY(0px) !important;
+        //         .cross {
+        //             width: 7% !important;
+        //         }
+        //         width: 35rem;    
+        //     }
+        // }
         .project-border {
             position: absolute;
             width: 100%;
@@ -258,9 +238,6 @@
     .project-title {
         font-size: 32px !important;
         width: 70% !important;
-    }
-    .slick-next, .slick-prev { 
-        left: 46% !important;
     }
     .exit-button {
         width: 25px !important;
