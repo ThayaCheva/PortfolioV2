@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b9595bd.css",
-    "main.js": "/static/js/main.2b778c2e.js",
+    "main.css": "/static/css/main.93baf95e.css",
+    "main.js": "/static/js/main.9ccedfc7.js",
     "static/media/page-3.png": "/static/media/page-3.8908cf0949cb22b3604c.png",
     "static/media/main.png": "/static/media/main.39310db51962ba2ea8b6.png",
     "static/media/page-1.png": "/static/media/page-1.d6a4fccdf912ad68b201.png",
-    "static/media/image-2.png": "/static/media/image-2.1e8f74984f4266e5e49d.png",
+    "static/media/image-2.png": "/static/media/image-2.a92a3468a913797473b5.png",
     "static/media/page-2.png": "/static/media/page-2.2b970f53f525d299c463.png",
     "static/media/image-3.png": "/static/media/image-3.6437609adc2c0b24a403.png",
     "static/media/wave-style-jap.jpg": "/static/media/wave-style-jap.b8928ad17cb9633598aa.jpg",
     "static/media/image-4.png": "/static/media/image-4.f77040ec8861046b4278.png",
     "static/media/hackathon.png": "/static/media/hackathon.bb187926af3c594c9e00.png",
+    "static/media/image-1.png": "/static/media/image-1.f57e6aa5f64d8ac289b1.png",
     "static/media/product.png": "/static/media/product.295b811af48664e6ed40.png",
     "static/media/info.png": "/static/media/info.b26f35114c4576060e86.png",
     "static/media/jap-wave-vector.png": "/static/media/jap-wave-vector.0a4707e74268f1935395.png",
     "static/media/login.png": "/static/media/login.6c385224213f20a385f2.png",
     "static/media/thaya-resume.pdf": "/static/media/thaya-resume.0079304f8be8c5e45eb2.pdf",
-    "static/media/image-1.png": "/static/media/image-1.f57e6aa5f64d8ac289b1.png",
     "static/media/RobotoFlex-Regular.ttf": "/static/media/RobotoFlex-Regular.3e7d64296e40d655f5cf.ttf",
-    "static/media/sun.png": "/static/media/sun.9e62bac8d336c38fda3e.png",
+    "static/media/sun.png": "/static/media/sun.4138fea282e401c0c9c8.png",
     "static/media/cloud.png": "/static/media/cloud.85fae77162482e1d39ff.png",
     "static/media/circle-line-white.png": "/static/media/circle-line-white.621a01d7bd461ef3370a.png",
     "static/media/border-mobile.png": "/static/media/border-mobile.fbd44494d170101c8436.png",
@@ -29,11 +29,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.6b9595bd.css.map": "/static/css/main.6b9595bd.css.map",
-    "main.2b778c2e.js.map": "/static/js/main.2b778c2e.js.map"
+    "main.93baf95e.css.map": "/static/css/main.93baf95e.css.map",
+    "main.9ccedfc7.js.map": "/static/js/main.9ccedfc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b9595bd.css",
-    "static/js/main.2b778c2e.js"
+    "static/css/main.93baf95e.css",
+    "static/js/main.9ccedfc7.js"
   ]
 }
