@@ -7,7 +7,7 @@ export default function Navbar() {
     const [toggle, setToggle] = React.useState('show-menu');
     function expandMenu() {
         console.log(toggle);
-        if (toggle == 'show-menu') {
+        if (toggle === 'show-menu') {
             setToggle('close-menu');
         }
         else {
@@ -17,10 +17,10 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <ul className="desktop-nav">
-                <a href="" className="logo">{`<THAYA/CHEVA>`}</a>
+                <a href="#home" className="logo">{`<THAYA/CHEVA>`}</a>
                 <div>
-                    <a href="#home" className="nav-item">HOME</a>
                     <a href="#about" className="nav-item">ABOUT</a>
+                    <a href="#skills" className="nav-item">SKILLS</a>
                     <a href="#projects" className="nav-item">PROJECTS</a>
                     <a href="#footer" className="nav-item">CONTACT</a>
                 </div>
@@ -29,16 +29,16 @@ export default function Navbar() {
                 <div></div>
                 <a href="#home" className="logo">{`<THAYA/CHEVA>`}</a>
                 <div className="ham-menu " onClick={() => expandMenu()}>
-                    {toggle == 'show-menu' && <FontAwesomeIcon className="icon" icon={faBars}/>}
-                    {toggle == 'close-menu' && <FontAwesomeIcon className="icon" icon={faXmark}/>}
+                    {toggle === 'show-menu' && <FontAwesomeIcon className="icon" icon={faBars}/>}
+                    {toggle === 'close-menu' && <FontAwesomeIcon className="icon" icon={faXmark}/>}
                 </div>
             </div>
             <div className={`drop-menu ${toggle}`}>
                 <ul>
-                    <li><a href="#home">  HOME  </a></li>
-                    <li><a href="#about">  ABOUT  </a></li>
-                    <li><a href="#projects">  PROJECTS  </a></li>
-                    <li><a href="#footer">  CONTACT  </a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
                 </ul>
             </div>
         </nav>

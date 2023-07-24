@@ -13,9 +13,7 @@ function App() {
         <div className="art">
           <div className="art-container">
             <img className="background" src={require("./images/wave-style-jap.jpg")} alt="cloud"></img>
-            <div className="sun-container">
-              <img className="shrine" src={require("./images/shrine.png")}></img>
-            </div>
+            <div className="sun-container"></div>
             <img className="cloud" src={require("./images/cloud.png")} alt="cloud"></img>
           </div>
         </div>

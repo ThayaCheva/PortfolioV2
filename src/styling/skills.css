@@ -60,25 +60,6 @@
 #skills .skills-container h2 {
   margin: 2rem 0 1.5rem 0;
 }
-#skills .skills-container .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#skills .skills-container .skills-list .skills-item {
-  margin: 0.5rem 0.5rem;
-  padding: 0.2rem 0.8rem;
-  border: 1px solid var(--dark);
-  border-radius: 15px;
-  letter-spacing: 0.2rem;
-  transition: all 0.2s ease-in;
-  z-index: 2;
-}
-#skills .skills-container .skills-list .skills-item:hover {
-  background: var(--secondary);
-  color: var(--light);
-  cursor: default;
-}
 #skills .skills-container .skills-2 {
   padding: 0 3rem;
 }
@@ -92,6 +73,26 @@
   z-index: 1;
 }
 
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills-list .skills-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--dark);
+  border-radius: 15px;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in;
+  z-index: 2;
+}
+.skills-list .skills-item:hover {
+  background: var(--secondary);
+  color: var(--light);
+  cursor: default;
+}
+
 @media screen and (max-width: 580px) {
   .line-black, .line-white {
     width: 35% !important;
@@ -102,14 +103,14 @@
   .skills-container::before {
     border: 5px solid var(--light) !important;
   }
-  .skills-container .skills-list {
+  .skills-list {
     font-size: 14px;
     padding: 0 2rem;
   }
-  .skills-container .skills-list .skills-item {
+  .skills-list .skills-item {
     margin: 0.3rem !important;
   }
-  .skills-container .skills-2 {
+  .skills-2 {
     padding: 0 6rem !important;
   }
 }
@@ -130,11 +131,11 @@
   }
 }
 @media screen and (max-width: 435px) {
-  .skills-container .skills-list {
+  .skills-list {
     padding: 0 0.8rem;
     font-size: 12px;
   }
-  .skills-container .skills-list .skills-item {
+  .skills-list .skills-item {
     margin: 0.1rem !important;
     padding: 0.3rem 0.5rem !important;
   }
@@ -143,10 +144,10 @@
   }
 }
 @media screen and (max-width: 385px) {
-  .skills-container .skills-list {
+  .skills-list {
     font-size: 10px;
   }
-  .skills-container .skills-2 {
+  .skills-2 {
     padding: 0 2rem !important;
   }
   h2 {
