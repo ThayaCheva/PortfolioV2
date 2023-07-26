@@ -21,9 +21,6 @@
 #projects .slick-next {
   right: 100px;
 }
-#projects .slick-dots {
-  transform: translateY(-80px);
-}
 #projects .projects-container .main-carousel-container .slick-prev, #projects .projects-container .main-carousel-container .slick-next {
   transform: translateY(-60px);
 }
@@ -35,6 +32,9 @@
 }
 #projects .projects-container .main-carousel-container .slick-prev:hover {
   transform: translateY(-60px) scale(-1.2, 1.2);
+}
+#projects .projects-container .main-carousel-container .slick-dots {
+  transform: translateY(-80px);
 }
 #projects .projects-container .project-item {
   box-sizing: border-box;
@@ -230,6 +230,18 @@
     width: 8rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .main-carousel-container .slick-prev, .main-carousel-container .slick-next {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .main-carousel-container .slick-prev {
+    left: 50px !important;
+  }
+  .main-carousel-container .slick-next {
+    right: 50px !important;
+  }
+}
 @media screen and (max-width: 390px) {
   .project-display .project-info .btn-container {
     flex-direction: column;
@@ -243,5 +255,15 @@
   .project-title {
     font-size: 24px !important;
     width: 70% !important;
+  }
+  .main-carousel-container .slick-prev, .main-carousel-container .slick-next {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .main-carousel-container .slick-prev {
+    left: 50px !important;
+  }
+  .main-carousel-container .slick-next {
+    right: 50px !important;
   }
 }/*# sourceMappingURL=projects.css.map */
