@@ -12,7 +12,7 @@ export default function Footer() {
                     <li><a href="https://github.com/ThayaCheva" target="_blank"><FontAwesomeIcon className="icons" icon={faGithub}/></a></li>
                     <li><a href="https://www.instagram.com/jerrycheva1/" target="_blank"><FontAwesomeIcon className="icons" icon={faInstagram}/></a></li>
                 </ul>
-                <h3> Designed and built by Thaya Chevaphatrakul using React</h3>
+                <h3> Designed and built by Thaya Chevaphatrakul</h3>
                 <img className="img-1"src={require("./images/jap-wave-vector.png")}/>
                 <img className="img-2" src={require("./images/jap-wave-vector.png")}></img>
             </div>
