@@ -3,7 +3,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react';
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [toggle, setToggle] = React.useState('show-menu');
     function expandMenu() {
         console.log(toggle);
@@ -15,7 +15,7 @@ export default function Navbar() {
         }
     }
     return (
-        <nav id="navbar">
+        <nav id="navbar" onMouseMoveCapture={props.hoverFunction}>
             <ul className="desktop-nav">
                 <a href="#home" className="logo">{`<THAYA/CHEVA>`}</a>
                 <div>

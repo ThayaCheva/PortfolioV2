@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar hoverFunction = {handleMouseMove}/>
       <div className="landing" onMouseMoveCapture={handleMouseMove}>
         <div className="clouds">
           <img className="cloud-object cloud-1" style={{
@@ -29,10 +29,15 @@ function App() {
           transform: `translate(${parallaxPosition.x * -0.02}px, ${parallaxPosition.y * -0.02}px)`,
         }} src={require("./images/cloud3.png")}/>
         </div>
+        <div className="tori-container">
+          <img className="tori-title" src={require("./images/tori-title.png")} alt="tori-title"/>
+        </div>
         <div className="art">
           <div className="art-container">
             <img className="background" src={require("./images/wave-style-jap.jpg")} alt="cloud"></img>
-            <div className="sun-container"></div>
+            <div className="sun-container" style={{
+            transform: `translate(${parallaxPosition.x * 0.005}px, ${parallaxPosition.y * 0.005}px)`,
+            }}></div>
             <img className="cloud-grey" style={{
             transform: `translate(${parallaxPosition.x * 0.01}px, ${parallaxPosition.y * -0.01}px)`,
             }}  src={require("./images/cloud-grey.png")} alt="cloud-grey"></img>
@@ -40,8 +45,8 @@ function App() {
           </div>
         </div>
       </div>
-      <About/>
-      <Skills/>
+      <About hoverFunction = {handleMouseMove}/>
+      <Skills hoverFunction = {handleMouseMove}/>
       <Projects/>
       <Footer/>
     </div>

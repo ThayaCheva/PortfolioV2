@@ -2,9 +2,9 @@ import React from 'react'
 import "./styling/about.css"
 import PDF from './files/thaya-resume.pdf'
 
-export default function About() {
+export default function About(props) {
     return (
-        <section id="about">
+        <section id="about" onMouseMoveCapture={props.hoverFunction}>
             <div className="about-container">
                 <div className="header">
                     <h1>ABOUT ME</h1>

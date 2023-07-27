@@ -66,6 +66,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 0.2rem;
     border: 1px solid var(--dark);
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
@@ -143,39 +144,53 @@ p {
 }
 
 .landing {
+    position: relative;
     width: 100%;
     background: var(--primary);
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    .tori-container {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        .tori-title {
+            position: relative;
+            z-index: 6;
+            width: 25%;
+        }
+    }
     .background {
         position: absolute;
+        width: 100%;
         opacity: 0.05;
-        z-index: -1;
     }
     .clouds {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100%;
         .cloud-1 {
             position: absolute;
-            top: 50px;
+            top: 5%;
             left: 10%;
             width: 20%;
             object-fit: cover;
         }
         .cloud-2 {
             position: absolute;
-            top: 250px;
+            top: 25%;
             left: 65%;
             width: 20%;
         }
         .cloud-3 {
             position: absolute;
-            top: 450px;
+            top: 45%;
             left: 15%;
+            width: 20%;
         }
     }
     .art {
-        z-index: 5;
         position: relative;
         top: 0;
         width: 100%;
@@ -187,7 +202,7 @@ p {
             align-items: flex-end;
             .sun-container {
                 transform: translateY(-5px);
-                background-image: url("./images/sun.png");
+                background-image: url("./images/sun-background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 40%;
@@ -215,11 +230,13 @@ p {
                 }
             }
             .cloud-white, .cloud-grey {
+                z-index: 10;
                 position: absolute;
                 bottom: 0;
             }
             .cloud-white {
                 width: 100%;
+                transform: translateY(5px);
                 object-fit: cover;
             }
             .cloud-grey {

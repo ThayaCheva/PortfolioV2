@@ -18,7 +18,7 @@ export default function Projects() {
         handleHideProject();    
         setSelectedProject([project, classname]);
     }
-    
+
     const projects = [
             {title: "LASTBITE", 
             desc: "LastBite is a service which essentially acts as an online food marketplace. It addresses the problem of achieving responsible consumption and production by giving a platform through which users can give away unwanted food or leftover food and others can choose to collect it. Made for 2023 Melbourne Hack and won 2nd place.", github: "https://github.com/LordPachimari/last-bite", 
