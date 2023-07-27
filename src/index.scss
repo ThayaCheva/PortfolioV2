@@ -214,11 +214,16 @@ p {
                     transform: translateY(50px);
                 }
             }
-            .cloud {
+            .cloud-white, .cloud-grey {
                 position: absolute;
                 bottom: 0;
+            }
+            .cloud-white {
                 width: 100%;
                 object-fit: cover;
+            }
+            .cloud-grey {
+                width: 130%;
             }
         }
     }

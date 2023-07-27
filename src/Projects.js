@@ -8,7 +8,6 @@ import './index.css'
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = React.useState([]);
-    const [projectState, setProjectState] = React.useState("closed-state");
     const [hideProject, setHideProject] = React.useState(false);
 
     function handleHideProject() {
@@ -16,16 +15,10 @@ export default function Projects() {
     }
 
     function changeState(project, classname) {
-        if (projectState === "opened-state") {
-            setProjectState("closed-state");
-        }
-        else {
-            setProjectState("opened-state");
-            handleHideProject();    
-            setSelectedProject([project, classname]);
-        }
+        handleHideProject();    
+        setSelectedProject([project, classname]);
     }
-
+    
     const projects = [
             {title: "LASTBITE", 
             desc: "LastBite is a service which essentially acts as an online food marketplace. It addresses the problem of achieving responsible consumption and production by giving a platform through which users can give away unwanted food or leftover food and others can choose to collect it. Made for 2023 Melbourne Hack and won 2nd place.", github: "https://github.com/LordPachimari/last-bite", 
@@ -78,8 +71,6 @@ export default function Projects() {
         };
 
         if (window.innerWidth <= 1000) {
-            // settings.vertical = true;
-            // settings.verticalSwiping = true;
             settings.slidesToShow = 1;
         }
 

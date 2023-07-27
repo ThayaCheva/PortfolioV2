@@ -213,12 +213,17 @@ p {
   width: 20%;
   transform: translateY(50px);
 }
-.landing .art .art-container .cloud {
+.landing .art .art-container .cloud-white, .landing .art .art-container .cloud-grey {
   position: absolute;
   bottom: 0;
+}
+.landing .art .art-container .cloud-white {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.landing .art .art-container .cloud-grey {
+  width: 130%;
 }
 
 .header {
