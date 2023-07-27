@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8b22132.css",
-    "main.js": "/static/js/main.7092bc9b.js",
+    "main.css": "/static/css/main.c70418a7.css",
+    "main.js": "/static/js/main.9025e3fd.js",
     "static/media/page-3.png": "/static/media/page-3.8908cf0949cb22b3604c.png",
     "static/media/main.png": "/static/media/main.39310db51962ba2ea8b6.png",
     "static/media/page-1.png": "/static/media/page-1.d6a4fccdf912ad68b201.png",
@@ -18,22 +18,23 @@
     "static/media/login.png": "/static/media/login.6c385224213f20a385f2.png",
     "static/media/thaya-resume.pdf": "/static/media/thaya-resume.0079304f8be8c5e45eb2.pdf",
     "static/media/RobotoFlex-Regular.ttf": "/static/media/RobotoFlex-Regular.3e7d64296e40d655f5cf.ttf",
-    "static/media/sun.png": "/static/media/sun.4138fea282e401c0c9c8.png",
+    "static/media/sun-background.png": "/static/media/sun-background.5c996f6ca3e214395461.png",
     "static/media/cloud-grey.png": "/static/media/cloud-grey.304b93d0ae92da397293.png",
     "static/media/circle-line-white.png": "/static/media/circle-line-white.621a01d7bd461ef3370a.png",
     "static/media/border-mobile.png": "/static/media/border-mobile.fbd44494d170101c8436.png",
     "static/media/border.png": "/static/media/border.7ead8f72a9a72254950b.png",
     "static/media/circle-line-black.png": "/static/media/circle-line-black.6cf7f3b5960ee9ab9b2a.png",
+    "static/media/tori-title.png": "/static/media/tori-title.ec8918762582206e33f7.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.f8b22132.css.map": "/static/css/main.f8b22132.css.map",
-    "main.7092bc9b.js.map": "/static/js/main.7092bc9b.js.map"
+    "main.c70418a7.css.map": "/static/css/main.c70418a7.css.map",
+    "main.9025e3fd.js.map": "/static/js/main.9025e3fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8b22132.css",
-    "static/js/main.7092bc9b.js"
+    "static/css/main.c70418a7.css",
+    "static/js/main.9025e3fd.js"
   ]
 }
