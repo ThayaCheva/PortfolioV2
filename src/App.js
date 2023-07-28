@@ -47,7 +47,7 @@ function App() {
         </div>
       </div>
       <About hoverFunction = {handleMouseMove}/>
-      <Skills hoverFunction = {handleMouseMove}/>
+      <Skills/>
       <Projects/>
       <Footer/>
     </div>

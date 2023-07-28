@@ -1,8 +1,8 @@
 import React from 'react'
 import './styling/skills.css'
-export default function Skills(props) {
+export default function Skills() {
     return (
-        <section id="skills" onMouseMoveCapture={props.hoverFunction}>
+        <section id="skills">
             <div className="skills-container">
                 <div className="header">
                     <h1>MY SKILLS</h1>
