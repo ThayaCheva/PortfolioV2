@@ -142,23 +142,24 @@ p {
   position: relative;
   width: 100%;
   background: var(--primary);
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 .landing .tori-container {
   position: absolute;
   display: flex;
   width: 100%;
-  height: 100%;
-  align-items: center;
+  height: 85%;
+  align-items: flex-end;
   justify-content: center;
 }
 .landing .tori-container .tori-title {
   position: relative;
-  z-index: 6;
+  z-index: 1;
   width: 25%;
 }
 .landing .background {
   position: absolute;
+  height: 100%;
   width: 100%;
   opacity: 0.05;
 }
@@ -188,9 +189,6 @@ p {
   width: 20%;
 }
 .landing .art {
-  position: relative;
-  top: 0;
-  width: 100%;
   padding-top: 5rem;
 }
 .landing .art .art-container {
@@ -209,6 +207,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-5px) !important;
 }
 .landing .art .art-container .sun-container h2 {
   position: absolute;
@@ -223,24 +222,19 @@ p {
 .landing .art .art-container .sun-container h2 span {
   font-size: 70px;
 }
-.landing .art .art-container .sun-container .shrine {
-  position: absolute;
-  width: 20%;
-  transform: translateY(50px);
-}
 .landing .art .art-container .cloud-white, .landing .art .art-container .cloud-grey {
-  z-index: 10;
   position: absolute;
-  bottom: 0;
+  z-index: 999 !important;
 }
 .landing .art .art-container .cloud-white {
   width: 100%;
-  transform: translateY(5px);
   -o-object-fit: cover;
      object-fit: cover;
+  transform: translateY(5px) !important;
 }
 .landing .art .art-container .cloud-grey {
   width: 130%;
+  transform: translateY(-5px) !important;
 }
 
 .header {

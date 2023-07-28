@@ -9,9 +9,13 @@ function App() {
   const [parallaxPosition, setParallaxPosition] = React.useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
-    const x = (e.clientX - window.innerWidth / 2);
-    const y = (e.clientY - window.innerHeight / 2);
-    setParallaxPosition({ x, y });
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    const isApple = /iPhone|iPod|iPad/i.test(navigator.userAgent);
+    if (!(isMobile || isApple)) {
+      const x = (e.clientX - window.innerWidth / 2);
+      const y = (e.clientY - window.innerHeight / 2);
+      setParallaxPosition({ x, y });
+    }
   };
 
   return (
