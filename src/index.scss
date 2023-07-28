@@ -26,7 +26,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: var(--background);
+    background-image: url("./images/wave-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 
@@ -146,7 +148,6 @@ p {
 .landing {
     position: relative;
     width: 100%;
-    background: var(--primary);
     overflow: hidden !important;
     .tori-container {
         position: absolute;
@@ -200,7 +201,7 @@ p {
             align-items: flex-end;
             .sun-container {
                 transform: translateY(-5px);
-                background-image: url("./images/sun-background.png");
+                background-image: url("./images/landing-sun-background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 40%;
@@ -208,7 +209,6 @@ p {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transform: translateY(-5px) !important;
                 h2 {
                     position: absolute;
                     transform: translateY(-150px);
@@ -234,7 +234,7 @@ p {
             }
             .cloud-grey {
                 width: 130%;
-                transform: translateY(-5px) !important;
+                bottom: 5px;
             }
         }
     }

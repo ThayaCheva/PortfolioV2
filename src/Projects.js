@@ -42,7 +42,7 @@ export default function Projects() {
             video: "", 
             path: "pirate",
             folder: require.context(`./images/project-image/pirate`, false),
-            program: ["JAVA", "BAGEL"]},
+            program: ["Java", "Bagel"]},
 
             {title: "PACMAN", 
             desc: "A unique spin on PacMan that offers players the freedom to create custom maps using a map editor. The game boasts multiple levels and introduces new gameplay mechanics, including autoplay, portals, and power-ups like freezing monsters. Furthermore, the game features new monsters, each with its own distinct behaviors.", 
@@ -60,14 +60,47 @@ export default function Projects() {
     }
 
     const MainCarousel = () => {
+        const slidesCount = projects.length;
         const settings = {
             dots: true,
             infinite: false,
             speed: 500,
-            slidesToShow: 3, // Display three items at a time
+            slidesToShow: 3,
             slidesToScroll: 1,
-            arrows: true,
             swipe: false,
+            arrow: true,
+            afterChange: (currentSlide) => {
+                const prevBtn = document.querySelector('.slick-prev');
+                const nextBtn = document.querySelector('.slick-next');
+                if (currentSlide === 0) {
+                    prevBtn.style.opacity = "0";
+                    prevBtn.style.transition = "opacity 0.3s ease";
+                }
+                else {
+                    prevBtn.style.opacity = "1";
+                }
+                if (window.innerWidth <= 1000) {
+                    if (currentSlide === slidesCount - 1) {
+                        nextBtn.style.opacity = "0";
+                        nextBtn.style.transition = "opacity 0.3s ease";
+                    } else {
+                        nextBtn.style.opacity = "1";
+                    }
+                }
+                else {
+                    if (currentSlide === slidesCount - 3) {
+                        nextBtn.style.opacity = "0";
+                        nextBtn.style.transition = "opacity 0.3s ease";
+                    } else {
+                        nextBtn.style.opacity = "1";
+                    }
+                }
+            },
+            onInit: () => {
+                const prevBtn = document.querySelector('.slick-prev');
+                prevBtn.style.opacity = "0";
+                prevBtn.style.transition = "opacity 0.3s ease";
+            },
         };
 
         if (window.innerWidth <= 1000) {
@@ -78,7 +111,7 @@ export default function Projects() {
             if (index % 3 === 0) {
                 return (
                     <div key={index} className={`project-item item-1`} onClick={() => changeState(p, "item-1")}>
-                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/project-border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/project-border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>
@@ -88,7 +121,7 @@ export default function Projects() {
             else if (index % 3 === 1) { 
                 return (
                     <div key={index} className={`project-item item-2`} onClick={() => changeState(p, "item-2")}>
-                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/project-border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/project-border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>
@@ -98,7 +131,7 @@ export default function Projects() {
             else {
                 return (
                     <div key={index} className={`project-item item-3`} onClick={() => changeState(p, "item-3")}>
-                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                        {window.innerWidth <= 20 ? <img className="project-border" alt="project-border"src={require("./images/project-border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/project-border.png")}></img>}
                         <div className="project-title">
                             {p.title}
                         </div>
@@ -120,7 +153,7 @@ export default function Projects() {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 1, // Display three items at a time
+            slidesToShow: 1, 
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -174,7 +207,7 @@ export default function Projects() {
                 </div>}
                 {hideProject && <div className="project-display">
                     <div className={`project-item ${selectedProject[1]}`}  onClick={() => handleHideProject()}>
-                    {window.innerWidth <= 1000 ? <img className="project-border" alt="project-border" src={require("./images/border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/border.png")}></img>}
+                    {window.innerWidth <= 1000 ? <img className="project-border" alt="project-border" src={require("./images/project-border-mobile.png")}></img> : <img className="project-border" alt="project-border" src={require("./images/project-border.png")}></img>}
                     {selectedProject[1] !== "item-1" ? <img className="exit-button" src={require("./images/cross-black.png")} alt="cross-black"></img> : <img className="exit-button" src={require("./images/cross-white.png")} alt="cross-white"></img>}
                         <div className="project-title">
                             {selectedProject[0].title}

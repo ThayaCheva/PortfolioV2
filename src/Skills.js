@@ -24,8 +24,8 @@ export default function Skills(props) {
                     <div className="skills-item">SASS</div>
                 </div>
             </div>
-            <img className="line-black" src={require("./images/circle-line-black.png")} alt="line-black"></img>
-            <img className="line-white" src={require("./images/circle-line-white.png")} alt="line-white"></img>
+            <img className="line-black" src={require("./images/skills-background-line-black.png")} alt="line-black"></img>
+            <img className="line-white" src={require("./images/skills-background-line-white.png")} alt="line-white"></img>
         </section>
     )
 }

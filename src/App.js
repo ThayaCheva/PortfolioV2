@@ -25,27 +25,24 @@ function App() {
         <div className="clouds">
           <img className="cloud-object cloud-1" style={{
           transform: `translate(${parallaxPosition.x * 0.03}px, ${parallaxPosition.y  * -0.01}px)`,
-        }} src={require("./images/cloud1.png")}/>
+        }} src={require("./images/landing-cloud1.png")}/>
           <img className="cloud-object cloud-2" style={{
           transform: `translate(${parallaxPosition.x  * 0.04}px, ${parallaxPosition.y  * 0.04}px)`,
-        }} src={require("./images/cloud2.png")}/>
+        }} src={require("./images/landing-cloud2.png")}/>
           <img className="cloud-object cloud-3" style={{
           transform: `translate(${parallaxPosition.x * -0.02}px, ${parallaxPosition.y * -0.02}px)`,
-        }} src={require("./images/cloud3.png")}/>
+        }} src={require("./images/landing-cloud3.png")}/>
         </div>
         <div className="tori-container">
-          <img className="tori-title" src={require("./images/tori-title.png")} alt="tori-title"/>
+          <img className="tori-title" src={require("./images/landing-tori-title.png")} alt="tori-title"/>
         </div>
         <div className="art">
           <div className="art-container">
-            <img className="background" src={require("./images/wave-style-jap.jpg")} alt="cloud"></img>
-            <div className="sun-container" style={{
-            transform: `translate(${parallaxPosition.x * 0.005}px, ${parallaxPosition.y * 0.005}px)`,
-            }}></div>
+            <div className="sun-container"></div>
             <img className="cloud-grey" style={{
             transform: `translate(${parallaxPosition.x * 0.01}px, ${parallaxPosition.y * -0.01}px)`,
-            }}  src={require("./images/cloud-grey.png")} alt="cloud-grey"></img>
-            <img className="cloud-white" src={require("./images/cloud-white.png")} alt="cloud-white"></img>
+            }}  src={require("./images/landing-cloud-grey.png")} alt="cloud-grey"></img>
+            <img className="cloud-white" src={require("./images/landing-cloud-white.png")} alt="cloud-white"></img>
           </div>
         </div>
       </div>
