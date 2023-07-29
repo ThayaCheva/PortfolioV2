@@ -108,6 +108,7 @@ export default function Projects() {
         }
 
         const projectsElements = projects.map((p, index) => {
+            // border source: https://www.pngwing.com/en/free-png-zgdjx
             if (index % 3 === 0) {
                 return (
                     <div key={index} className={`project-item item-1`} onClick={() => changeState(p, "item-1")}>
